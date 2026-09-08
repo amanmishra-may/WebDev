@@ -1,0 +1,43 @@
+h1 {
+    color: red;
+    font-weight: 500;
+}
+
+body {
+    background-color: pink;
+}
+
+button {
+    color: red;
+    background-color: white;
+}
+
+#i1 {
+    color: whitesmoke;
+    font-weight: lighter;
+}
+
+#i2 {
+    color: rosybrown;
+    font-weight: 900;
+}
+
+.c1 {
+    color: royalblue;
+}
+
+#box {
+    background-color: white;
+    text-decoration: skyblue wavy underline;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+
+#outer {
+    font-size: 25px;
+}
+
+#inner {
+    font-size: 10px;
+}
