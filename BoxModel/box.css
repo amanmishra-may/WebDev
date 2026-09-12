@@ -1,18 +1,39 @@
-div {
+#box1 {
+    background-color: pink;
+    border: 2px solid black;
     height: 100px;
     width: 100px;
-    background-color: pink;
-    border-width: 2px;
-    border-style: solid;
-    border-color: skyblue;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 25px;
+    display: inline-block;
+    background-image: url("Cat.png");
 
 }
 
-h1 {
+#box2 {
+    background-color: rgb(184, 25, 51);
+    border: 2px solid black;
     height: 100px;
-    width: 200px;
-    background-color: aquamarine;
+    width: 100px;
+    display: inline-block;
+
+}
+
+
+#box3 {
+    background-color: rgb(44, 184, 25);
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+
+
+}
+
+
+#box4 {
+    background-color: rgb(171, 184, 25);
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+
 }
