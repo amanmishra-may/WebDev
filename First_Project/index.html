@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kestrel Home — Buy, Rent, and Sell with Confidence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a href="#top" class="logo">
+                <span class="logo-mark" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" width="34" height="34">
+                        <path d="M4 20 L20 6 L36 20" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 18 V34 H31 V18" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <line x1="20" y1="34" x2="20" y2="24" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" />
+                    </svg>
+                </span>
+                Kestrel Home
+            </a>
+
+            <nav class="main-nav" aria-label="Primary">
+                <a href="#buy">Buy</a>
+                <a href="#rent">Rent</a>
+                <a href="#sell">Sell</a>
+                <a href="#listings">Listings</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#sell" class="btn btn-outline header-cta">List your home</a>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- ============ HERO ============ -->
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow-line">Residential sales &amp; leasing · Since 2011</p>
+                    <h1>Find the place that already feels like yours.</h1>
+                    <p class="hero-sub">Kestrel Home lists houses, condos, and rentals from agents who actually know the
+                        block — not just the listing sheet. Search below, or tell us what you're after.</p>
+                </div>
+
+                <form class="search-card" aria-label="Search homes">
+                    <div class="search-toggle" role="group" aria-label="Looking to">
+                        <input type="radio" id="mode-buy" name="mode" checked>
+                        <label for="mode-buy">Buy</label>
+                        <input type="radio" id="mode-rent" name="mode">
+                        <label for="mode-rent">Rent</label>
+                    </div>
+
+                    <div class="search-field">
+                        <label for="location">Where</label>
+                        <input type="text" id="location" placeholder="City, neighborhood, or ZIP">
+                    </div>
+
+                    <div class="search-row">
+                        <div class="search-field">
+                            <label for="price">Price up to</label>
+                            <select id="price">
+                                <option>$300,000</option>
+                                <option>$500,000</option>
+                                <option>$750,000</option>
+                                <option>$1,000,000+</option>
+                            </select>
+                        </div>
+                        <div class="search-field">
+                            <label for="beds">Bedrooms</label>
+                            <select id="beds">
+                                <option>Any</option>
+                                <option>1+</option>
+                                <option>2+</option>
+                                <option>3+</option>
+                                <option>4+</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary search-submit">Search homes</button>
+                </form>
+            </div>
+
+            <p class="wrap hero-tagline">No fees to browse. No account required. Just homes.</p>
+        </section>
+
+        <!-- ============ STATS STRIP ============ -->
+        <section class="stats-strip">
+            <div class="wrap stats-grid">
+                <div class="stat"><span class="stat-num">1,204</span><span class="stat-label">Active listings</span>
+                </div>
+                <div class="stat"><span class="stat-num">38</span><span class="stat-label">Neighborhoods covered</span>
+                </div>
+                <div class="stat"><span class="stat-num">112</span><span class="stat-label">Local agents</span></div>
+                <div class="stat"><span class="stat-num">9 days</span><span class="stat-label">Average time to
+                        offer</span></div>
+            </div>
+        </section>
+
+        <!-- ============ FEATURED LISTINGS ============ -->
+        <section class="listings" id="listings">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Recently listed</h2>
+                    <p>A mix of what's on the market this week — for sale and for rent.</p>
+                </div>
+
+                <div class="listing-grid">
+
+                    <article class="listing-card">
+                        <div class="listing-photo photo-a">
+                            <span class="tag tag-sale">For sale</span>
+                        </div>
+                        <div class="listing-body">
+                            <div class="listing-price">$489,000</div>
+                            <h3>214 Larkspur Row</h3>
+                            <p class="listing-loc">Maple Hollow</p>
+                            <ul class="listing-meta">
+                                <li>3 bed</li>
+                                <li>2 bath</li>
+                                <li>1,680 sqft</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="listing-card">
+                        <div class="listing-photo photo-b">
+                            <span class="tag tag-rent">For rent</span>
+                        </div>
+                        <div class="listing-body">
+                            <div class="listing-price">$1,950<span>/mo</span></div>
+                            <h3>88 Birchwood Ave, Unit 4</h3>
+                            <p class="listing-loc">Dockside District</p>
+                            <ul class="listing-meta">
+                                <li>2 bed</li>
+                                <li>1 bath</li>
+                                <li>950 sqft</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="listing-card">
+                        <div class="listing-photo photo-c">
+                            <span class="tag tag-sale">For sale</span>
+                        </div>
+                        <div class="listing-body">
+                            <div class="listing-price">$725,000</div>
+                            <h3>17 Sycamore Crest</h3>
+                            <p class="listing-loc">Foxglove Heights</p>
+                            <ul class="listing-meta">
+                                <li>4 bed</li>
+                                <li>3 bath</li>
+                                <li>2,410 sqft</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="listing-card">
+                        <div class="listing-photo photo-d">
+                            <span class="tag tag-rent">For rent</span>
+                        </div>
+                        <div class="listing-body">
+                            <div class="listing-price">$1,375<span>/mo</span></div>
+                            <h3>52 Cobalt Lane</h3>
+                            <p class="listing-loc">Old Millworks</p>
+                            <ul class="listing-meta">
+                                <li>1 bed</li>
+                                <li>1 bath</li>
+                                <li>680 sqft</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="listing-card">
+                        <div class="listing-photo photo-e">
+                            <span class="tag tag-sale">For sale</span>
+                        </div>
+                        <div class="listing-body">
+                            <div class="listing-price">$355,000</div>
+                            <h3>9 Thistledown Ct</h3>
+                            <p class="listing-loc">Ridgeline</p>
+                            <ul class="listing-meta">
+                                <li>2 bed</li>
+                                <li>2 bath</li>
+                                <li>1,140 sqft</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="listing-card">
+                        <div class="listing-photo photo-f">
+                            <span class="tag tag-rent">For rent</span>
+                        </div>
+                        <div class="listing-body">
+                            <div class="listing-price">$2,600<span>/mo</span></div>
+                            <h3>410 Harrow Street</h3>
+                            <p class="listing-loc">Maple Hollow</p>
+                            <ul class="listing-meta">
+                                <li>3 bed</li>
+                                <li>2 bath</li>
+                                <li>1,820 sqft</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="listings-footer">
+                    <a href="#" class="btn btn-outline">View all 1,204 listings</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ HOW IT WORKS ============ -->
+        <section class="process" id="buy">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>However you're moving, here's how it goes</h2>
+                    <p>Three paths. Each one handled by a person, not a script.</p>
+                </div>
+
+                <div class="process-grid">
+
+                    <div class="process-col">
+                        <h3 id="buy-h">Buying</h3>
+                        <ol class="steps">
+                            <li><span class="step-num">01</span>
+                                <div><strong>Tell us your range</strong>
+                                    <p>Budget, area, and the things you won't compromise on.</p>
+                                </div>
+                            </li>
+                            <li><span class="step-num">02</span>
+                                <div><strong>Tour with an agent</strong>
+                                    <p>We line up showings that fit your week, not ours.</p>
+                                </div>
+                            </li>
+                            <li><span class="step-num">03</span>
+                                <div><strong>Make an offer</strong>
+                                    <p>We handle paperwork and negotiate on your behalf.</p>
+                                </div>
+                            </li>
+                            <li><span class="step-num">04</span>
+                                <div><strong>Close and move in</strong>
+                                    <p>Average close time is 32 days from accepted offer.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="process-col" id="rent">
+                        <h3>Renting</h3>
+                        <ol class="steps">
+                            <li><span class="step-num">01</span>
+                                <div><strong>Set your filters</strong>
+                                    <p>Move-in date, pet policy, budget — we'll match fast.</p>
+                                </div>
+                            </li>
+                            <li><span class="step-num">02</span>
+                                <div><strong>Book a viewing</strong>
+                                    <p>In person or a live video walkthrough, your call.</p>
+                                </div>
+                            </li>
+                            <li><span class="step-num">03</span>
+                                <div><strong>Apply online</strong>
+                                    <p>One application, submitted straight to the landlord.</p>
+                                </div>
+                            </li>
+                            <li><span class="step-num">04</span>
+                                <div><strong>Sign and move in</strong>
+                                    <p>Most tenants are in within two weeks of applying.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="process-col" id="sell">
+                        <h3>Selling</h3>
+                        <ol class="steps">
+                            <li><span class="step-num">01</span>
+                                <div><strong>Get a valuation</strong>
+                                    <p>A free, no-obligation estimate within 24 hours.</p>
+                                </div>
+                            </li>
+                            <li><span class="step-num">02</span>
+                                <div><strong>List with an agent</strong>
+                                    <p>Photos, pricing strategy, and a listing that's live in days.</p>
+                                </div>
+                            </li>
+                            <li><span class="step-num">03</span>
+                                <div><strong>Field offers</strong>
+                                    <p>We screen buyers and negotiate the terms that matter.</p>
+                                </div>
+                            </li>
+                            <li><span class="step-num">04</span>
+                                <div><strong>Close the sale</strong>
+                                    <p>Sellers here close in 9 days on average, start to finish.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ WHY KESTREL ============ -->
+        <section class="why">
+            <div class="wrap why-grid">
+
+                <div class="why-item">
+                    <svg class="why-icon" viewBox="0 0 40 40" width="32" height="32">
+                        <path d="M8 20 L17 29 L32 11" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h3>Verified listings only</h3>
+                    <p>Every home is confirmed by an agent before it goes live — no stale posts, no bait-and-switch.</p>
+                </div>
+
+                <div class="why-item">
+                    <svg class="why-icon" viewBox="0 0 40 40" width="32" height="32">
+                        <circle cx="16" cy="14" r="6" fill="none" stroke="currentColor" stroke-width="2.5" />
+                        <path d="M6 33 C6 24 12 21 16 21 C20 21 26 24 26 33" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" />
+                        <path d="M25 15 C27 15 29 17 29 20 C29 22.5 27.5 24 26 24.5" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" />
+                        <path d="M28 24 C32 25 34 28 34 33" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" />
+                    </svg>
+                    <h3>Agents who know the block</h3>
+                    <p>Not a call center — a local agent who can tell you which street floods and which school has a
+                        waitlist.</p>
+                </div>
+
+                <div class="why-item">
+                    <svg class="why-icon" viewBox="0 0 40 40" width="32" height="32">
+                        <rect x="7" y="12" width="26" height="18" rx="2" fill="none" stroke="currentColor"
+                            stroke-width="2.5" />
+                        <line x1="7" y1="18" x2="33" y2="18" stroke="currentColor" stroke-width="2.5" />
+                        <line x1="13" y1="24" x2="21" y2="24" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" />
+                    </svg>
+                    <h3>No hidden fees</h3>
+                    <p>Buyer and renter tools are free to use. Our fee structure is public — ask, and we'll show you
+                        exactly.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============ TESTIMONIAL ============ -->
+        <section class="testimonial">
+            <div class="wrap testimonial-inner">
+                <p class="quote">"We'd been priced out twice before. Our agent found the Ridgeline listing before it hit
+                    the open market and walked us through closing without a single surprise fee."</p>
+                <p class="quote-attr">— Dana R., bought in Ridgeline</p>
+            </div>
+        </section>
+
+        <!-- ============ CTA BANNER ============ -->
+        <section class="cta-band">
+            <div class="wrap cta-inner">
+                <div>
+                    <h2>Thinking about selling?</h2>
+                    <p>Get a free home valuation in minutes — no agent visit required to start.</p>
+                </div>
+                <a href="#contact" class="btn btn-light">Get my valuation</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer" id="contact">
+        <div class="wrap footer-grid">
+
+            <div class="footer-brand">
+                <a href="#top" class="logo logo-footer">
+                    <span class="logo-mark" aria-hidden="true">
+                        <svg viewBox="0 0 40 40" width="30" height="30">
+                            <path d="M4 20 L20 6 L36 20" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9 18 V34 H31 V18" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    Kestrel Home
+                </a>
+                <p>124 Wharton Street, Suite 3<br>Millbrook, OH 43081<br>(614) 555-0148</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="#listings">Buy a home</a>
+                <a href="#rent">Rent a home</a>
+                <a href="#sell">Sell your home</a>
+                <a href="#">Neighborhood guides</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">About Kestrel</a>
+                <a href="#">Our agents</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>New listings, weekly</h4>
+                <p>One email a week. No spam, unsubscribe anytime.</p>
+                <form class="newsletter-form">
+                    <label for="newsletter-email" class="sr-only">Email address</label>
+                    <input type="email" id="newsletter-email" placeholder="you@example.com">
+                    <button type="submit" class="btn btn-primary">Sign up</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="wrap footer-bottom">
+            <p>© 2026 Kestrel Home Realty. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Fair Housing</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

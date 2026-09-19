@@ -5,6 +5,7 @@
     width: 100px;
     display: inline-block;
     background-image: url("Cat.png");
+    background-size: cover;
 
 }
 
